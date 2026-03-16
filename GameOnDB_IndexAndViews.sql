@@ -1,6 +1,4 @@
--- ============================================================
--- INDEXES
--- ============================================================
+--indexes
 
 CREATE INDEX idx_users_role ON users(role);
 
@@ -27,9 +25,7 @@ CREATE INDEX idx_positions_sport ON positions(sport_id);
 CREATE INDEX idx_clubs_sport ON clubs(sport_id);
 CREATE INDEX idx_locations_coords ON locations(latitude, longitude);
 
--- ============================================================
--- VIEWS
--- ============================================================
+-- views
 
 -- View 1: Active/open games with sport and location details
 CREATE OR REPLACE VIEW vw_active_games AS
